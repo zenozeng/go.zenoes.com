@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<script>
+ var map, url;
+ map = {
+     gx: "http://www.zjuitc.com/showarticle.asp?cls=1&artid=939"
+ }
+ url = map[window.location.href.split('/').pop()];
+ if(!url) url = '/';
+ window.location.href = url;
+</script>
