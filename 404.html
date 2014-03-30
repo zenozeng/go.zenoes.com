@@ -1,15 +1,22 @@
-<meta charset="UTF-8">
-<script>
- var map, url;
- map = {
-     gx: "http://www.zjuitc.com/showarticle.asp?cls=1&artid=939",
-     sh: "http://222.205.42.106/sh.doc",
-     chiyo1: "http://box.myqsc.com/-final1",
-     chiyo2: "http://box.myqsc.com/-final3",
-     chiyo3: "http://box.myqsc.com/-final4",
-     srtp: "http://bksy.zju.edu.cn/redir.php?catalog_id=711213&object_id=973675"
- }
- url = map[window.location.href.split('/').pop()];
- if(!url) url = '/';
- window.location.href = url;
-</script>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script>
+         var map, url;
+         map = {
+             gx: "http://www.zjuitc.com/showarticle.asp?cls=1&artid=939",
+             sh: "http://222.205.42.106/sh.doc",
+             chiyo1: "http://box.myqsc.com/-final1",
+             chiyo2: "http://box.myqsc.com/-final3",
+             chiyo3: "http://box.myqsc.com/-final4",
+             srtp: "http://bksy.zju.edu.cn/redir.php?catalog_id=711213&object_id=973675"
+         }
+         url = map[window.location.href.split('/').pop()];
+         if(!url) url = '/';
+         window.location.href = url;
+        </script>
+    </head>
+    <body>
+        <!-- 据说在 IE 中要长于某个临界才会能够正常 404, 否则则会变成 IE 自己的友好 404。 -->
+    </body>
+</html>
