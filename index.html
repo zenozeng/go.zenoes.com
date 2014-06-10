@@ -1,3 +1,22 @@
+<head>
+    <title>URL.ZENOZENG.COM</title>
+    <script src="map.js"></script>
+    <style>
+    a {color: #000; text-decoration: none}
+    body {padding: 4em}
+    .link-short {font-size: 16px}
+    .link-real {font-size: 12px}
+    </style>
+</head>
 <body>
-    URL.ZENOZENG.COM
+    <h2>URL.ZENOZENG.COM</h2>
+    <script>
+     var html = "";
+     for(var key in map) {
+         var url = "http://url.zenozeng.com/"+key;
+         html += "<a href='"+url+"' class='link-short'>"+url+"</a><br>";
+         html += "&nbsp;&nbsp;&nbsp;&nbsp;<a href='"+map[key]+"' class='link-real'>"+map[key]+"</a><br><br>";
+     }
+     document.body.innerHTML += html;
+    </script>
 </body>
